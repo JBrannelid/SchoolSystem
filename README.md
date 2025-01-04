@@ -65,7 +65,8 @@ dotnet run
 
 ## Project Structure
 ```
-SchoolManagement/
+School/
+├── Asset/                 # img for README.md
 ├── Core/
 │   ├── Interfaces/        # Service interfaces
 │   └── Services/          # Service implementation
@@ -73,9 +74,9 @@ SchoolManagement/
 │   └── SchoolContext.cs   # EF Core context
 ├── Models/                # Database entities
 ├── UI/
-│   ├── Menus/            # Menu implementations
-│   └── MenuOptions/      # Menu enumerations
-└── Program.cs            # Application entry point
+│   ├── Menus/             # Menu implementations
+│   └── MenuOptions/       # Menu enumerations
+└── Program.cs             # Application entry point
 ```
 
 ## Menu Structure
