@@ -3,6 +3,13 @@
 ## Overview
 A C# console application for managing a school database using Entity Framework Core with a Database First approach. The application provides an intuitive interface for managing students, employees, courses, and grades, featuring colorful visualizations using Spectre.Console.
 
+## Features Showcase
+
+### Department Salary Visualization
+The application provides colorful bar charts for salary distribution:
+
+![Department Salary Distribution](./Assets/Consoleimg.png)
+
 ## Technical Stack
 - C# (.NET 8.0)
 - Entity Framework Core (Database First)
@@ -70,13 +77,6 @@ SchoolManagement/
 │   └── MenuOptions/      # Menu enumerations
 └── Program.cs            # Application entry point
 ```
-
-## Features Showcase
-
-### Department Salary Visualization
-The application provides colorful bar charts for salary distribution:
-
-![Department Salary Distribution](./Assets/Consoleimg.png)
 
 ## Menu Structure
 - Main Menu
