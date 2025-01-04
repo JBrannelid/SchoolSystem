@@ -1,0 +1,132 @@
+﻿# School Management System
+
+## Overview
+A C# console application for managing a school database using Entity Framework Core with a Database First approach. The application provides an intuitive interface for managing students, employees, courses, and grades, featuring colorful visualizations using Spectre.Console.
+
+## Technical Stack
+- C# (.NET 8.0)
+- Entity Framework Core (Database First)
+- SQL Server
+- Spectre.Console for UI enhancement
+
+## Prerequisites
+- Visual Studio 2022 or newer
+- SQL Server (Local or Express)
+- .NET 8.0 SDK
+
+## Required NuGet Packages
+```shell
+// For Entity Framework connection
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Design
+
+// For json configuration file
+Microsoft.Extensions.Configuration
+Microsoft.Extensions.Configuration.Json
+
+// For UI Console functions 
+Spectre.Console
+```
+
+## Installation & Setup
+
+### 1. Database Setup
+```sql
+-- Using SQL Server Management Studio (SSMS)
+```
+
+### 2. Application Setup
+1. Clone the repository
+
+2. Configure the database connection
+   - Change Filename `appsettings.example.json` to `appsettings.json`
+   - Update the connection string in `appsettings.json` with your database details:
+     ```json
+     {
+       "ConnectionStrings": {
+         "DefaultConnection": "Server=YOUR_SERVER;Database=HighSchool;Trusted_Connection=True;TrustServerCertificate=True;"
+       }
+     }
+     ```
+
+3. Build and run
+```bash
+dotnet build
+dotnet run
+```
+
+## Project Structure
+```
+SchoolManagement/
+├── Core/
+│   ├── Interfaces/        # Service interfaces
+│   └── Services/          # Service implementation
+├── Data/
+│   └── SchoolContext.cs   # EF Core context
+├── Models/                # Database entities
+├── UI/
+│   ├── Menus/            # Menu implementations
+│   └── MenuOptions/      # Menu enumerations
+└── Program.cs            # Application entry point
+```
+
+## Features Showcase
+
+### Department Salary Visualization
+The application provides colorful bar charts for salary distribution:
+```
+Department Salary Distribution
+█████████████████████ Faculty of Science      (Average: 32,976 kr)
+██████████████ Faculty of Humanities/sports   (Average: 28,450 kr)
+███████████████████████ Administration        (Average: 48,600 kr)
+```
+
+### Grade Distribution
+Visualizes grade distribution with color-coding:
+```
+Grade Distribution for Mathematics
+[Green]  A: ████████ (30%)
+[Blue]   B: ██████ (25%)
+[Yellow] C: ███████ (28%)
+[Orange] D: ███ (12%)
+[Red]    F: █ (5%)
+```
+
+### Teacher Count by Department
+```
+Faculty Distribution
+█████████████ Science Department      (8 Teachers)
+████████ Humanities Department        (5 Teachers)
+███ Administration                    (2 Staff)
+```
+
+## Menu Structure
+- Main Menu
+  - Student Management
+  - Employee Management
+  - Course Management
+  - Department Management
+  - Grade Management
+
+## Data Validation
+- PIN Format (YYYYMMDD-XXXX) (Swedish personal identification number)
+- Grade Validation (A-F)
+- Course Code Uniqueness
+
+## Views and Statistics
+- Employee Overview
+- Student Grade Summary
+- Department Statistics
+- Salary Analysis
+
+## Sample Data
+The database comes pre-populated with sample data including:
+- Students across different classes
+- Teachers in various departments
+- Common courses
+- Grade values (A-F)
+- Department structure
+
+## License
+Feel free to use this school project as you wish 
