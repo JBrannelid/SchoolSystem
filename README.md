@@ -75,11 +75,11 @@ SchoolManagement/
 
 ### Department Salary Visualization
 The application provides colorful bar charts for salary distribution:
-Department Salary Distribution
 
-[blue]█████████████████████[/blue] Faculty of Science      (Average: 32,976 kr)
-[green]██████████████[/green] Faculty of Humanities/sports   (Average: 28,450 kr)
-[yellow]███████████████████████[/yellow] Administration        (Average: 48,600 kr)
+Department Salary Distribution:
+- [Blue] Faculty of Science: Average 32,976 kr
+- [Green] Faculty of Humanities/Sports: Average 28,450 kr
+- [Yellow] Administration: Average 48,600 kr
 
 ## Menu Structure
 - Main Menu
