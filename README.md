@@ -75,31 +75,11 @@ SchoolManagement/
 
 ### Department Salary Visualization
 The application provides colorful bar charts for salary distribution:
-```
 Department Salary Distribution
-█████████████████████ Faculty of Science      (Average: 32,976 kr)
-██████████████ Faculty of Humanities/sports   (Average: 28,450 kr)
-███████████████████████ Administration        (Average: 48,600 kr)
-```
 
-### Grade Distribution
-Visualizes grade distribution with color-coding:
-```
-Grade Distribution for Mathematics
-[Green]  A: ████████ (30%)
-[Blue]   B: ██████ (25%)
-[Yellow] C: ███████ (28%)
-[Orange] D: ███ (12%)
-[Red]    F: █ (5%)
-```
-
-### Teacher Count by Department
-```
-Faculty Distribution
-█████████████ Science Department      (8 Teachers)
-████████ Humanities Department        (5 Teachers)
-███ Administration                    (2 Staff)
-```
+[blue]█████████████████████[/blue] Faculty of Science      (Average: 32,976 kr)
+[green]██████████████[/green] Faculty of Humanities/sports   (Average: 28,450 kr)
+[yellow]███████████████████████[/yellow] Administration        (Average: 48,600 kr)
 
 ## Menu Structure
 - Main Menu
@@ -112,21 +92,6 @@ Faculty Distribution
 ## Data Validation
 - PIN Format (YYYYMMDD-XXXX) (Swedish personal identification number)
 - Grade Validation (A-F)
-- Course Code Uniqueness
-
-## Views and Statistics
-- Employee Overview
-- Student Grade Summary
-- Department Statistics
-- Salary Analysis
-
-## Sample Data
-The database comes pre-populated with sample data including:
-- Students across different classes
-- Teachers in various departments
-- Common courses
-- Grade values (A-F)
-- Department structure
 
 ## License
 Feel free to use this school project as you wish 
